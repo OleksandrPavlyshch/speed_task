@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4f4f4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="windows.svg" class="cls-1" d="M401.512,2179.43l-0.012-10.4,12.8-1.74v12.14H401.512Zm14.922-12.45,17.061-2.48v14.93H416.434v-12.45Zm17.066,14.59,0,14.93-17.061-2.4v-12.53H433.5Zm-19.2,12.26-12.789-1.76v-10.5H414.3v12.26Z" transform="translate(-401.5 -2164.5)"/>
+</svg>

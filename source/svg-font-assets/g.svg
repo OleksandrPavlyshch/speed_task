@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        fill: #fff;
+        text-anchor: end;
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text id="g.svg" class="cls-1" x="22.999" y="20"><tspan x="22.999"></tspan></text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 50 40">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #efefef;
+        font-family: Georgia;
+      }
+    </style>
+  </defs>
+  <text id="quotes.svg" class="cls-1" x="-5" y="112">“</text>
+</svg>
