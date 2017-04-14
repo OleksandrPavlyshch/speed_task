@@ -1,0 +1,6 @@
+mixin menu(baseClass, menuData)
+	-var menuItems = menuData || menu
+	ul(class=baseClass+'-list')
+		each val in menuItems
+			li(class=baseClass+'-list-item')
+				a(href="#" class=baseClass+'-list-item-link')=val
