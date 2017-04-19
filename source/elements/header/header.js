@@ -16,7 +16,7 @@
 
 		window.addEventListener('scroll', function () {
 			var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-			if(scrolled > window.innerHeight/6){
+			if(scrolled > 30){
 				$body.addClass(scrollClass);
 				return;
 			}
