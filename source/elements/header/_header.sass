@@ -16,6 +16,7 @@ header
 		height: 100%
 		width: 600px
 		background-color: $white
+		transition: width .4s ease
 	&:before
 		left: 50%
 	&:after
@@ -27,7 +28,6 @@ header
 		&:after
 			box-shadow: -2px 2px 2px $gray
 			width: 50%
-			transition: width .4s ease
 	.toggle-menu-button
 		float: right
 	+max-screen($tablet)
@@ -52,7 +52,7 @@ header
 		z-index: 2
 		padding: 30px $col-padding
 		background-color: $white
-		transition: padding .2s ease
+		transition: padding .4s ease
 		.is-scroll &
 			padding: 15px $col-padding
 	&_menu
