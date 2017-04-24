@@ -15,7 +15,7 @@ var soursePath = './source/'
 			, 'pug_watch': [soursePath + 'pages/**/*.pug', soursePath + 'pages/**/*.json', soursePath + 'elements/**/*.pug', soursePath + 'elements/**/*.json']
 			, 'sass': [soursePath + 'sass/**/*.*', soursePath + 'elements/**/*.sass']
 			, 'sassFolder': soursePath + 'sass/'
-			, 'img': soursePath + 'img/*.*'
+			, 'img': soursePath + 'img/**/*.*'
 			, 'icons': soursePath + 'img/icons/*.png'
 			, 'cssTemplate': soursePath + 'helpers/sprite.template.mustache'
 			, 'helpers': soursePath + 'helpers/'
