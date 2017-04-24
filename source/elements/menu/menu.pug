@@ -1,6 +1,10 @@
-mixin menu(baseClass, menuData)
+mixin menu(baseClass, menuData, preselectItem)
 	-var menuItems = menuData || menu
 	ul(class=baseClass+'-list')
-		each val in menuItems
-			li(class=baseClass+'-list_item')
-				a(href="#" class=baseClass+'-list_item-link')=val
+		each val, index in menuItems
+			if index == preselectItem
+				li(class=baseClass+'-list_item')
+					a(href="#"+val[1] class=baseClass+'-list_item-link active')=val[0]
+			else
+				li(class=baseClass+'-list_item')
+					a(href="#"+val[1] class=baseClass+'-list_item-link')=val[0]

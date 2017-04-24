@@ -3,8 +3,6 @@
 (function () {
 
 	var $body = $('body')
-		, menuButtonClass = '.toggle-menu-button'
-		, menuShowClass = 'is-menu-show'
 		, scrollClass = "is-scroll";
 
 	
@@ -27,10 +25,4 @@
 
 	//init
 	scrollWatch();
-
-
-	$body.on('click', menuButtonClass,  function() {
-		$body.toggleClass(menuShowClass);
-	});
-	
 })();

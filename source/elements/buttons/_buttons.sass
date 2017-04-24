@@ -1,0 +1,69 @@
+.toggle-menu-button
+	+pseudo
+	display: none
+	width: 30px
+	height: 15px
+	cursor: pointer
+	background-color: transparent
+	border-top: 2px solid $melanzane
+	transition: all .3s ease
+	+max-screen($tablet)
+		display: inline-block
+	&:before,
+	&:after
+		border-top: 2px solid $melanzane
+		transition: all .3s ease
+	&:before
+		width: 15px
+		top: 6px
+		transform-origin: right top
+	&:after
+		width: 23px
+		top: 13px
+		transform-origin: left top
+	.is-menu-show &
+		border-top-color: $mountain-meadow
+		border-top-width: 2px
+		&:before,
+		&:after
+			border-top-color: $mountain-meadow
+			width: 50%
+			top: 0
+			border-top-width: 2px
+		&:before
+			transform: rotate(-45deg)
+		&:after
+			transform: rotate(45deg)
+			left: auto
+			right: 0
+
+.button
+	background-color: $mountain-meadow
+	display: inline-block
+	height: 50px
+	line-height: 50px
+	border: 1px solid $mountain-meadow
+	font-family: montserrat, Arial, sans-serif
+	color: $white
+	font-size: 14px
+	font-weight: 700
+	line-height: 48px
+	text-transform: uppercase
+	min-width: 135px
+	padding: 0 20px
+	cursor: pointer
+	transition: all .4s ease
+	vertical-align: middle
+	&:hover
+		color: $mountain-meadow
+		background-color: $white
+
+.button-white
+	@extend .button
+	color: $mountain-meadow
+	background-color: $white
+	border-color: $white
+	padding: 0 30px
+	&:hover
+		color: $white
+		background-color: $mountain-meadow

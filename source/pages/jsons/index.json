@@ -4,12 +4,12 @@
 	, "meta_image": "#"
 	, "card": "summary"
 	, "autor": "me"
-	,"logo": "Mobileapp"
+	,"logo": ["Mobileapp", "hero"]
 	, "menu": [
-		"HOME"
-		, "FEATURES"
-		, "team"
-		, "Testimonials"
-		, "CONTACT"
+		["HOME", "hero"]
+		, ["FEATURES", "key_features"]
+		, ["team", ""]
+		, ["Testimonials", ""]
+		, ["CONTACT", ""]
 	]
 }
