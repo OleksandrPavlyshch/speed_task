@@ -8,8 +8,13 @@
 	, "menu": [
 		["HOME", "hero"]
 		, ["FEATURES", "key_features"]
-		, ["team", ""]
-		, ["Testimonials", ""]
-		, ["CONTACT", ""]
+		, ["team", "team"]
+		, ["Testimonials", "testimonials"]
+		, ["CONTACT", "contact"]
 	]
+	, "footer":{
+		"copy": "© 2003-2015 Business Name, All Rights Reserved"
+		, "designed": "Designed by Colorpixels.net"
+	}
+
 }

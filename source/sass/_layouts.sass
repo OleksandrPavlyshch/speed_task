@@ -43,8 +43,10 @@ input[type="submit"]
 			margin-left: (100%/$columns-amount)*$i
 
 
-// +max-screen($tablet)
-	// +grid($column-name: "col-md", $col-padding: 0)
++grid($column-name: "col", $col-padding: 0)
+
++max-screen($tablet)
+	+grid($column-name: "col-md", $col-padding: 0)
 
 +max-screen($tablet)
 	%block

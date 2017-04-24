@@ -1,6 +1,17 @@
 .footer
-	min-height: 680px
-	background: url(../img/footer_bg.jpg) 50% 50% no-repeat
-	background-size: cover
-	box-sizing: border-box
-	padding-top: 65px
+	// line-height: 1
+	font-size: 14px
+	border-top: 1px solid $charcoal
+	color: $dark-gray
+	padding: 40px $col-padding 25px
+	&-inner
+		@extend %row
+		&-designed
+			text-align: right
+		&-copy,
+		&-designed
+			@extend %col-6
+			+max-screen($tablet)
+				text-align: center
+				& + &
+					padding-top: $col-padding
