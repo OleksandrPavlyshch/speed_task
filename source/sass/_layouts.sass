@@ -45,22 +45,26 @@ input[type="submit"]
 
 +grid($column-name: "col", $col-padding: 0)
 
-+max-screen($tablet)
+
+// +max-screen($tablet)
+// 	%block
+// 		width: auto
+// 		float: none
+// 		padding-left: 0
+// 		padding-right: 0
+// 	%offset
+// 		margin-left: 0
+// 	@for $i from 1 through 12
+// 		%col-#{$i}
+// 			@extend %block
+// 		%col-offset-#{$i}
+// 			@extend %offset
+
++min-screen($tablet)
 	+grid($column-name: "col-md", $col-padding: 0)
 
-+max-screen($tablet)
-	%block
-		width: auto
-		float: none
-		padding-left: 0
-		padding-right: 0
-	%offset
-		margin-left: 0
-	@for $i from 1 through 12
-		%col-#{$i}
-			@extend %block
-		%col-offset-#{$i}
-			@extend %offset
++min-screen($mobile)
+	+grid($column-name: "col-sm", $col-padding: 0)
 
 
 .hide
