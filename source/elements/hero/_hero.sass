@@ -2,3 +2,55 @@
 	min-height: 755px
 	background: url(../img/top_bg.jpg) 50% 50% no-repeat
 	background-size: cover
+	margin-bottom: 65px
+	position: relative
+		
+	&-inner
+		@extend %row
+	&-text
+		padding: 282px $col-padding 0
+		color: $white
+		+max-screen($tablet)
+			padding-top: 220px
+		+max-screen($mobile)
+			text-align: center
+			padding-top: 140px
+	&-header
+		font-size: 42px
+		font-weight: 700
+		color: #fff
+		margin-bottom: 10px
+		line-height: 1.2
+		+max-screen($mobile)
+			margin-bottom: 20px
+			font-size: 40px
+	&-sub_header
+		font-size: 22px
+		font-weight: 700
+		line-height: 1.4
+		margin-bottom: 45px
+		+max-screen($mobile)
+			font-size: 19px
+	&-list
+		margin-bottom: 75px
+		&-item
+			font-size: 16px
+			line-height: 1.2
+			& + &
+				margin-top: 23px
+				+max-screen($mobile)
+					margin-top: 10px
+			&:before
+				@extend %icon
+				content: $icon-hero-arrow
+				font-size: 14px
+	&-image
+		position: absolute
+		bottom: 0
+		margin-bottom: -125px
+		right: calc(100%/12 - 60px)
+		+max-screen($tablet)
+			max-width: 45%
+			right: 0
+		+max-screen($mobile)
+			display: none

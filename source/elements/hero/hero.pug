@@ -1,10 +1,12 @@
 section.hero#hero
-	.hero-text
-		h1.hero-header=hero.header
-		h2.hero-header=hero.sub_header
-		ul.hero-list
-			each val in hero.title_list
-				li.hero-list-item=val
-		button.button
-			span=hero.button
-			i.icon.icon-download
+	.hero-inner
+		.hero-text
+			h1.hero-header=hero.header
+			h2.hero-sub_header=hero.sub_header
+			ul.hero-list
+				each val in hero.title_list
+					li.hero-list-item=val
+			button.button
+				span=hero.button
+				i.icon.icon-download
+		+insert-image('top_phones.png', 'top_phones', 'hero-image')
