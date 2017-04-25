@@ -43,7 +43,7 @@ input[type="submit"]
 			margin-left: (100%/$columns-amount)*$i
 
 
-+grid($column-name: "col", $col-padding: 0)
++grid($column-name: "col", $col-padding: 15px)
 
 
 // +max-screen($tablet)
@@ -61,10 +61,10 @@ input[type="submit"]
 // 			@extend %offset
 
 +min-screen($tablet)
-	+grid($column-name: "col-md", $col-padding: 0)
+	+grid($column-name: "col-md", $col-padding: 15px)
 
 +min-screen($mobile)
-	+grid($column-name: "col-sm", $col-padding: 0)
+	+grid($column-name: "col-sm", $col-padding: 15px)
 
 
 .hide
