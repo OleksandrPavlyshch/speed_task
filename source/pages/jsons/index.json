@@ -31,5 +31,15 @@
 			, "email": "Businessname@gmail.com"
 		}
 	}
+	, "hero": {
+		"header": "Introducing Mobileapp."
+		, "sub_header": "Maecenas vitae tellus sapien. Praesent "
+		, "title_list": [
+			"semper scelerisque tristique a enim"
+			, "Integer ut mattis nulla, eget vehicula elit "
+			, "Praesent rutrum ac nunc et"
+		]
+		, "button": "Download"
+	}
 
 }

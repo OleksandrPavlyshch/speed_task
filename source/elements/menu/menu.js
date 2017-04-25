@@ -15,7 +15,7 @@
 		if( $(event.target).closest(menuClass).length )
 			return;
 		$body.removeClass(menuShowClass);
-		event.stopPropagation();
+		// event.stopPropagation();
 	});
 
 	$(document).ready(function($) {
