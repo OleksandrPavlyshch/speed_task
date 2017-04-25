@@ -1,0 +1,8 @@
+.contact_info
+	h2.contact_info-header=contact.info.header
+	p.contact_info-title=contact.info.title
+	include ../social_buttons/social_buttons
+	p
+		a.contact_info-link(href="tel:"+contact.info.phone)=contact.info.phone
+		br
+		a.contact_info-link(href="mail:"+contact.info.email)=contact.info.email

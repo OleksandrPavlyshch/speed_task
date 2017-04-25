@@ -43,11 +43,12 @@
 	letter-spacing: 0
 	font-size: 20px
 	color: $white
-	border-radius: 3px
+	border-radius: 5px
 	background-color: $mountain-meadow
 	padding: 0 60px
 	line-height: 50px
 	height: 50px
+	transition: opacity, box-shadow .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1)
 	&:hover
 		span
 			transform: translateX(20px)
@@ -60,6 +61,10 @@
 		i
 			transform: translateX(-8px)
 			opacity: 1
+		&:hover
+			opacity: .9
+		&:active
+			box-shadow: inset 0 0 8px 2px rgba($black, .8)
 	span
 		left: 0px
 		display: inline-block
@@ -93,8 +98,11 @@
 			transform: translateX(-8px)
 			opacity: 1
 	+max-screen($tablet)
+		margin: 0 auto
+		display: block
+		padding: 0 60px
 		span
-			transform: translateX(18px)
+			transform: translateX(13px) !important
 		i
-			transform: translateX(-8px)
+			transform: translateX(6px) !important
 			opacity: 1

@@ -24,6 +24,12 @@
 			, "message": "Message"
 		}
 		, "send_button": "SUBMIT"
+		, "info": {
+			"header": "Get in touch with us"
+			, "title": "Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique."
+			, "phone": "+XX-XXXX - XXXX - XX"
+			, "email": "Businessname@gmail.com"
+		}
 	}
 
 }

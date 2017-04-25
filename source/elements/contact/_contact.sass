@@ -15,7 +15,9 @@
 
 .contact_form
 	&-wrap
+		margin-bottom: 50px
 		+min-screen($tablet)
+			margin-bottom: 0
 			order: 2
 	&-line
 		@extend %flex-grid-md
@@ -27,4 +29,28 @@
 			+max-screen($tablet)
 				& + &
 				margin: 30px 0 0
+	.send_button
+		+min-screen($tablet)
+			float: right
 
+.contact_info
+	text-align: center
+	box-sizing: border-box
+	+min-screen($tablet)
+		text-align: left
+		padding-right: 25% !important
+	&-header
+		font-size: 24px
+		color: $white
+		font-weight: 600
+	&-title
+		font-size: 14px
+		color: $dark-gray
+	&-link
+		text-decoration: none
+		font-size: 14px
+		color: #bface2
+		&:hover
+			text-decoration: underline
+	.social-buttons
+		margin: 35px 0 25px
