@@ -1,2 +1,11 @@
 section.testimonials#testimonials
-	
+	h2.center_header=testimonials.header
+	.testimonials_inner
+		ul.testimonials-slider
+			-var ts = 0;
+			while ts < 4
+				- ts++
+				li.testimonials-slider-item
+					.testimnials-image_wrap
+						+insert-image('testimnial_img.jpg', 'testimnial', 'testimnials-image')
+					.testimnials-text=testimonials.text

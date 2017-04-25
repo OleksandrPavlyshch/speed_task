@@ -1,2 +1,17 @@
 section.team#team
-	
+	h2.center_header=team.header
+	p.team-title=team.title
+	ul.team-inner
+	- var t = 0;
+	while t < 4
+		- t++
+		li.team-member
+			.team-member-top
+				+insert-image('team' + t + '.jpg', 'team member', 'team-image')
+				.team-member-top_overlay
+					h4.team-member-top_overlay-header=team.member_header
+					p.team-member-top_overlay-header=team.member_title
+					include ../social_buttons/social_buttons
+			.team-member-bot
+				h3.team-member-bot-name=team.member_name
+				p.team-member-bot-role=team.member_roles[(t - 1)]

@@ -41,5 +41,32 @@
 		]
 		, "button": "Download"
 	}
+	, "key_features": {
+		"header": "KEY FEATURES"
+		, "title": "Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend."
+		, "feature_header": "Amet varius"
+		, "feature_text": "Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada"
+	}
+	, "video": {
+		"header": "watch the video"
+		, "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at."
+	}
+	, "team": {
+		"header": "Our Team"
+		, "title": "Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend."
+		, "member_header": "Aenean ut suscipit urna. Donec efficitur "
+		, "member_title": "sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem."
+		, "member_name": "Jon Doe"
+		, "member_roles": [
+			"Managing Director"
+			, "Lead Designer"
+			, "Lead Developer"
+			, "Sr. UI Designer"
+		]
+	}
+	, "testimonials": {
+		"header": "What our customer’s say"
+		, "text": "Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id"
+	}
 
 }
