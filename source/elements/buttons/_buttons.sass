@@ -38,32 +38,63 @@
 			right: 0
 
 .button
-	background-color: $mountain-meadow
 	display: inline-block
-	height: 50px
-	line-height: 50px
-	border: 1px solid $mountain-meadow
-	font-family: montserrat, Arial, sans-serif
+	position: relative
+	letter-spacing: 0
+	font-size: 20px
 	color: $white
-	font-size: 14px
-	font-weight: 700
-	line-height: 48px
-	text-transform: uppercase
-	min-width: 135px
-	padding: 0 20px
-	cursor: pointer
-	transition: all .4s ease
-	vertical-align: middle
+	border-radius: 3px
+	background-color: $mountain-meadow
+	padding: 0 60px
+	line-height: 50px
+	height: 50px
 	&:hover
-		color: $mountain-meadow
-		background-color: $white
-
-.button-white
-	@extend .button
-	color: $mountain-meadow
-	background-color: $white
-	border-color: $white
-	padding: 0 30px
-	&:hover
+		span
+			transform: translateX(20px)
+		i
+			transform: translateX(-8px)
+			opacity: 1
+	+max-screen($tablet)
+		span
+			transform: translateX(20px)
+		i
+			transform: translateX(-8px)
+			opacity: 1
+	span
+		left: 0px
+		display: inline-block
+		transform: translateX(0)
+		transition: opacity .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1)
+		position: relative
+	i
+		font-size: 34px
+		line-height: 20px
 		color: $white
-		background-color: $mountain-meadow
+		width: 18px
+		position: absolute
+		top: 50%
+		left: 28px
+		margin-top: -9px
+		opacity: 0
+		transition: all .45s cubic-bezier(0.25,1,0.33,1)
+
+.send_button
+	@extend .button
+	padding: 0 40px
+	background-color: $turquoise
+	font-size: 22px
+	i
+		font-size: 22px
+		left: 28px
+	&:hover
+		span
+			transform: translateX(18px)
+		i
+			transform: translateX(-8px)
+			opacity: 1
+	+max-screen($tablet)
+		span
+			transform: translateX(18px)
+		i
+			transform: translateX(-8px)
+			opacity: 1

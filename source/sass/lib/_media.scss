@@ -71,7 +71,7 @@ $units: 1px !default;
 
 @mixin max-screen($res)
 {
-  @media screen and ( max-width: if(unitless($res), $res*$units, $res) )
+  @media screen and ( max-width: if(unitless($res), $res*$units - 1, $res -1) )
   {
     @content;
   }

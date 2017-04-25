@@ -1,0 +1,15 @@
+.contact_form-wrap
+
+	form(action="#").contact_form
+
+		.contact_form-line
+			input.contact_form-text_input(type="text" name="name" required placeholder=contact.placeholder.name title="Please enter you "+contact.placeholder.name.toLowerCase())
+			input.contact_form-text_input(type="email" name="email" required placeholder=contact.placeholder.email title="Please enter you "+contact.placeholder.email.toLowerCase())
+
+		//- .contact_form-line
+
+		textarea.contact_form-textarea(name="message" required placeholder=contact.placeholder.message title="Please enter you "+contact.placeholder.message.toLowerCase())
+
+		button.send_button(type="submit")
+			i.icon.icon-send-mail
+			span=contact.send_button

@@ -18,6 +18,12 @@
 	}
 	, "contact": {
 		"header": "Contact Us"
+		, "placeholder": {
+			"name": "Name "
+			, "email": "Email"
+			, "message": "Message"
+		}
+		, "send_button": "SUBMIT"
 	}
 
 }

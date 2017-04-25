@@ -5,12 +5,11 @@
 	color: $dark-gray
 	padding: 40px $col-padding 25px
 	&-inner
-		@extend %row
+		@extend %flex-grid-md
 		&-designed
 			text-align: right
 		&-copy,
 		&-designed
-			@extend %col-md-6
 			+max-screen($tablet)
 				text-align: center
 				& + &
