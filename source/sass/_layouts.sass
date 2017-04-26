@@ -90,3 +90,28 @@ input[type="submit"]
 	+min-screen($mobile)
 		flex-direction: row
 
+.owl
+	&-item
+		float: left
+	&-stage-outer
+		overflow: hidden
+	&-nav
+		display: none
+	&-dots
+		text-align: center
+		margin-top: 50px
+	&-dot
+		display: inline-block
+		width: 10px
+		height: 10px
+		border-radius: 5px
+		background-color: $melanzane
+		opacity: .2
+		cursor: pointer
+		transition: all .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1)
+		&:hover,
+		&.active
+			background-color: $mountain-meadow
+			opacity: 1
+		& + &
+			margin-left: 8px

@@ -1,1 +1,45 @@
 .testimonials
+	&_inner
+		@extend %row
+		padding: 0 calc(100%/12)
+		text-align: center
+		overflow: hidden
+	&-slider
+		overflow: hidden
+		padding: 30px 0 115px
+	&-image_wrap
+		overflow: hidden
+		border-radius: 50%
+		border: solid 2px #c4c7c7
+		width: 96px
+		height: 96px
+		display: block
+		margin: 0 auto 30px
+		img
+			max-width: 100%
+	&-text
+		font-size: 18px
+		&_wrap
+			margin-top: 55px
+			position: relative
+			padding: 30px 0 0 61px
+			+max-screen($mobile)
+				padding: 15px 0 0 32px
+			&:before
+				@extend .icon
+				content: $icon-quotes
+				position: absolute
+				left: 0
+				top: 9px
+				font-size: 58px
+				color: $white-smoke
+				+max-screen($mobile)
+					font-size: 30px
+	&-name
+		font-size: 18px
+		color: $sapphire
+		line-height: 1
+	&-company
+		line-height: 1
+		font-size: 13px
+		color: $dim-gray
