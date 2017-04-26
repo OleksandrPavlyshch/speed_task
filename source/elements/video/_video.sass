@@ -1,1 +1,52 @@
 .video
+	background-color: $turquoise
+	padding: 70px 0
+	&-inner
+		@extend %flex-grid-md
+	.video-image
+		width: 100%
+		vertical-align: middle
+		&_wrap
+			overflow: hidden
+			border-radius: 15px
+			padding: 0
+			margin: 0 auto 50px
+			max-width: 80%
+			+min-screen($tablet)
+				max-width: calc(100%/12 * 5)
+				margin-left: calc(100%/12 + #{$col-padding})
+				margin-right: $col-padding
+				margin-bottom: 0
+				order: 2
+	&-text
+		text-align: center
+		+min-screen($tablet)
+			text-align: left
+			max-width: 50%
+	&-header
+		color: $nero
+		font-size: 28px
+		text-transform: uppercase
+		margin-bottom: 15px
+	&-title
+		color: $white
+		margin-bottom: 20px
+		+min-screen($mdpi)
+			padding-right: 15%
+	&-platform
+		&_icon
+			display: inline-block
+			width: 68px
+			height: 68px
+			border-radius: 34px
+			background-color: $pacific-blue
+			text-align: center
+			line-height: 68px
+			color: $white
+			transition: all .45s cubic-bezier(0.25,1,0.33,1),transform .45s cubic-bezier(0.25,1,0.33,1)
+			cursor: pointer
+			font-size: 32px
+			&:hover
+				background-color: $black
+			&+&
+				margin-left: 20px

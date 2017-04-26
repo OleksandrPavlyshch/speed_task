@@ -1,10 +1,11 @@
 section.video#video
-	.video-image
-		+insert-image("video.jpg", "video","video")
-	.video-text
-		.video-header=video.header
-		.video-title=video.title
-		.video-platform_icons
-			.video-platform_icon.icon.icon-apple
-			.video-platform_icon.icon.icon-android
-			.video-platform_icon.icon.icon-windows
+	.video-inner
+		.video-image_wrap
+			+insert-image("video.jpg", "video","video-image")
+		.video-text
+			h2.video-header=video.header
+			p.video-title=video.title
+			.video-platform_icons
+				i.video-platform_icon.icon.icon-apple
+				i.video-platform_icon.icon.icon-android
+				i.video-platform_icon.icon.icon-windows

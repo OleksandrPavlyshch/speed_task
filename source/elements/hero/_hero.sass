@@ -4,6 +4,8 @@
 	background-size: cover
 	margin-bottom: 125px
 	position: relative
+	+max-screen($mobile)
+		margin-bottom: 0
 	&-inner
 		@extend %row
 	&-text
