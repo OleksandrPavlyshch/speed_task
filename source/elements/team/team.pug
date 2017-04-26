@@ -1,17 +1,18 @@
 section.team#team
 	h2.center_header=team.header
-	p.team-title=team.title
-	ul.team-inner
-	- var t = 0;
-	while t < 4
-		- t++
-		li.team-member
-			.team-member-top
-				+insert-image('team' + t + '.jpg', 'team member', 'team-image')
-				.team-member-top_overlay
-					h4.team-member-top_overlay-header=team.member_header
-					p.team-member-top_overlay-header=team.member_title
-					include ../social_buttons/social_buttons
-			.team-member-bot
-				h3.team-member-bot-name=team.member_name
-				p.team-member-bot-role=team.member_roles[(t - 1)]
+	.team-inner
+		p.team-title=team.title
+		.team-members
+			- var t = 0;
+			while t < 4
+				- t++
+				.team-member
+					.team-member-info
+						.team-member-image_wrap
+							+insert-image('team' + t + '.jpg', 'team member', 'team-member-image')
+						h3.team-member-name=team.member_name
+						p.team-member-role=team.member_roles[(t - 1)]
+					.team-member-overlay
+						h4.team-member-overlay-header=team.member_header
+						p.team-member-overlay-title=team.member_title
+						include ../social_buttons/social_buttons

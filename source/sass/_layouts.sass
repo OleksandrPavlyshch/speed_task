@@ -84,6 +84,11 @@ input[type="submit"]
 	flex-direction: row
 
 
+%flex-grid-lg
+	@extend %flex-grid
+	+min-screen($mdpi)
+		flex-direction: row
+
 %flex-grid-md
 	@extend %flex-grid
 	+min-screen($tablet)
