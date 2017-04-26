@@ -2,16 +2,17 @@ section.key_features#key_features
 	h2.center_header=key_features.header
 	.key_features-inner
 		p.key_features-title=key_features.title
-	.key_features-inner
-		+insert-image('screen.png', 'screen', 'feature-image')
+	.key_features-inner.key_features-wrap
+		.key_features-image-wrap
+			+insert-image('screen.png', 'screen', 'key_features-image')
 		- var n = 0;
-		while n < 3
+		while n < 2
 			- n++
-			.key_features-line
+			.key_features-row(class="key_features-row"+n)
 				- var m = 0;
-				while m < 2
+				while m < 3
 					.key_features-item
-						i.icon(class="icon-feature"+(n + m))
+						i.key_features-item-icon.icon(class="icon-feature"+(n*n + m))
 						h3.key_features-item-header=key_features.feature_header
 						p.key_features-item-text=key_features.feature_text
 					- m++

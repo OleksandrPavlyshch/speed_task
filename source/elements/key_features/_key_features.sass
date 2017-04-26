@@ -2,3 +2,73 @@
 	padding: 60px 0 90px
 	&-inner
 		@extend %row
+		position: relative
+	// &-wrap
+		// +min-screen($mdpi)
+		// 	min-height: 726px
+	&-title
+		text-align: center
+		padding: 50px calc(100%/12) 85px
+	&-image
+		vertical-align: middle
+		display: inline-block
+		max-width: 80%
+		+min-screen($mobile)
+			max-width: 100%
+		&-wrap
+			text-align: center
+			width: 100%
+			+min-screen($mobile)
+				order: 1
+				width: calc(100% / 12 * 4)
+			// +min-screen($mobile)
+			// 	position: absolute
+			// 	top: 0
+			// 	left: 0
+			// 	width: 100%
+			// 	height: 100%
+	&-wrap
+		display: block
+		+min-screen($mobile)
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+	&-row
+		margin-top: 15px
+		width: 50%
+		float: left
+		padding: 0 $col-padding
+		+min-screen($tablet)
+			margin-top: 70px
+		+min-screen($mobile)
+			max-width: calc(100% / 12 * 3.5)
+			&1
+				order: 0
+			&2
+				order: 2
+
+	&-item
+		position: relative
+		& + &
+			margin-top: 20px
+			+min-screen($mdpi)
+				margin-top: 95px
+		+min-screen($mdpi)
+			padding: 10px 0 0 80px !important
+		&-icon
+			font-size: 25px
+			color: $mountain-meadow
+			margin-bottom: 5px
+			+min-screen($mdpi)
+				font-size: 40px
+				position: absolute
+				left: 0
+				top: 0
+		&-header
+			font-size: 18px
+			line-height: 1
+			margin-bottom: 5px
+			+min-screen($mdpi)
+				margin-bottom: 15px
+		&-text
+			font-size: 13px

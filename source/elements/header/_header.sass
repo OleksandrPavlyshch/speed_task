@@ -1,7 +1,7 @@
 header
 	// position: fixed
 	position: absolute
-	overflow-x: hidden
+	// overflow-x: hidden
 	width: 100%
 	left: 0
 	top: 30px
@@ -18,13 +18,20 @@ header
 		width: 600px
 		background-color: $white
 		transition: width .4s ease
+		+max-screen($mdpi)
+			width: auto
 	&:before
 		left: 50%
+		+max-screen($mdpi)
+			right: 0
 	&:after
 		right: 50%
+		+max-screen($mdpi)
+			left: 0
 	.is-scroll &
 		top: 0
 		position: fixed
+
 		&:before,
 		&:after
 			box-shadow: -2px 2px 2px $gray
