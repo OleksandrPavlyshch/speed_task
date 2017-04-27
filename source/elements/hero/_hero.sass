@@ -1,9 +1,11 @@
 .hero
-	min-height: 755px
 	background: url(../img/top_bg.jpg) 50% 50% no-repeat
 	background-size: cover
 	margin-bottom: 125px
 	position: relative
+	padding-bottom: 120px
+	+min-screen($mobile)
+		min-height: 755px
 	+max-screen($mobile)
 		margin-bottom: 0
 	&-inner

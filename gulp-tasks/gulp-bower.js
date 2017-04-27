@@ -35,7 +35,7 @@ gulp.task('wiredep', function () {
 						js: function(filePath){
 								var pathArray = filePath.split('/')
 									, fileName = pathArray[pathArray.length - 1];
-								return 'script(src="/js/vendor/' + fileName + '")';
+								return 'script(src="js/vendor/' + fileName + '")';
 							}
 						, css: function(filePath){
 								var pathArray = filePath.split('/')

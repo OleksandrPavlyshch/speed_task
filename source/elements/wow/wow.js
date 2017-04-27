@@ -1,4 +1,6 @@
 'use strict';
 (function () {
-	new WOW().init();
+	$(function () {
+		new WOW().init();
+	});
 })();

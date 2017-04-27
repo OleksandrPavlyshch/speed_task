@@ -21,11 +21,11 @@ var onlyPNGFilter = filter(['**/*.png'], {restore: true});
 			, developerName: 'my template'
 			, developerURL: 'my template'
 			, background: 'transpatent'
-			, path: '/'
+			, path: './'
 			, url: 'my template'
 			, display: 'standalone'
 			, orientation: 'portrait'
-			, start_url: '/?homescreen=1'
+			, start_url: './?homescreen=1'
 			, version: 1.0
 			, logging: false
 			, online: false

@@ -1,12 +1,12 @@
 section.team#team
-	h2.center_header=team.header
+	h2.center_header.wow.fadeInUp=team.header
 	.team-inner
-		p.team-title=team.title
+		p.team-title.wow.fadeInUp=team.title
 		.team-members
 			- var t = 0;
 			while t < 4
 				- t++
-				.team-member
+				.team-member.wow.zoomIn
 					.team-member-info
 						.team-member-image_wrap
 							+insert-image('team' + t + '.jpg', 'team member', 'team-member-image')

@@ -1,14 +1,15 @@
 section.key_features#key_features
-	h2.center_header=key_features.header
-	.key_features-inner
+	h2.center_header.wow.fadeInUp=key_features.header
+	.key_features-inner.wow.fadeInUp
 		p.key_features-title=key_features.title
 	.key_features-inner.key_features-wrap
 		.key_features-image-wrap
-			+insert-image('screen.png', 'screen', 'key_features-image')
+			+insert-image('screen.png', 'screen', 'key_features-image  wow fadeInUp')
 		- var n = 0;
 		while n < 2
 			- n++
-			.key_features-row(class="key_features-row"+n)
+			- var styleClass = n==1 ? "fadeInLeft" : "fadeInRight"
+			.key_features-row.wow(class="key_features-row"+ n + " " + styleClass )
 				- var m = 0;
 				while m < 3
 					.key_features-item

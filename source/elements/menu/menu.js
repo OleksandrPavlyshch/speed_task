@@ -20,7 +20,7 @@
 
 	$(document).ready(function($) {
 		$('.header_menu').ddscrollSpy({
-			scrolltopoffset: -62
+			scrolltopoffset: -70
 			, scrollduration: 1000
 			, highlightclass: 'active'
 		});
