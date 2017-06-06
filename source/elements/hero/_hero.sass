@@ -3,13 +3,18 @@
 	background-size: cover
 	margin-bottom: 125px
 	position: relative
-	padding-bottom: 120px
+	// padding-bottom: 120px
+	display: flex
+	// align-items: stretch
 	+min-screen($mobile)
 		min-height: 755px
 	+max-screen($mobile)
 		margin-bottom: 0
 	&-inner
 		@extend %row
+		position: relative
+		flex: 1
+		min-height: 100%
 	&-text
 		padding: 282px $col-padding 0
 		color: $white
