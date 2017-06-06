@@ -3,7 +3,6 @@
 	background-size: cover
 	margin-bottom: 125px
 	position: relative
-	// padding-bottom: 120px
 	display: flex
 	// align-items: stretch
 	+min-screen($mobile)
@@ -15,14 +14,16 @@
 		position: relative
 		flex: 1
 		min-height: 100%
+		padding-bottom: 120px
 	&-text
 		padding: 282px $col-padding 0
 		color: $white
 		+max-screen($tablet)
+			padding: 282px $col-padding*2 0
 			padding-top: 220px
 		+max-screen($mobile)
 			text-align: center
-			padding-top: 140px
+			padding-top: 120px
 	&-header
 		font-size: 42px
 		font-weight: 700
@@ -39,11 +40,16 @@
 		margin-bottom: 45px
 		+max-screen($mobile)
 			font-size: 19px
+			margin-bottom: 25px
 	&-list
 		margin-bottom: 75px
+		text-align: left
 		&-item
 			font-size: 16px
 			line-height: 1.2
+			padding-left: 5px
+			+max-screen($mobile)
+				font-size: 15px
 			& + &
 				margin-top: 23px
 				+max-screen($mobile)
@@ -52,6 +58,9 @@
 				@extend %icon
 				content: $icon-hero-arrow
 				font-size: 14px
+				margin-left: -15px
+				margin-top: 3px
+				float: left
 	&-image
 		position: absolute
 		bottom: 0

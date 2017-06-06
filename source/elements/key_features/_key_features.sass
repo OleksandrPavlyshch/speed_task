@@ -3,6 +3,10 @@
 	&-inner
 		@extend %row
 		position: relative
+		+max-screen($tablet)
+			padding: 0 35px
+		+max-screen($mobile)
+			padding: 0 5px
 	// &-wrap
 		// +min-screen($mdpi)
 		// 	min-height: 726px
@@ -46,6 +50,7 @@
 			max-width: calc(100% / 12 * 3.5)
 			&1
 				order: 0
+				padding-left: 15px
 			&2
 				order: 2
 
